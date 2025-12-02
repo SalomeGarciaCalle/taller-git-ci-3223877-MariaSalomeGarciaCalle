@@ -21,7 +21,8 @@ jobs:
 
       - name: Install Prettier
         run: npm install --save-dev prettier
-      - name: Check formatting (Prettier)
+
+      - name: Check formatting
         run: npx prettier --check .
 
       - name: Run tests
