@@ -1,12 +1,12 @@
-// Función de suma
-function suma(a, b) {
-  return a + b;
+// Función que añade <li> a #lista
+function agregarItem(texto) {
+  const lista = document.getElementById('lista');
+  const li = document.createElement('li');
+  li.textContent = texto;
+  lista.appendChild(li);
 }
 
-// Mostrar en consola
-console.log('App lista');
-
-// Exportar para los tests
-if (typeof module !== 'undefined') {
-  module.exports = { suma };
-}
+// Conectar botón
+document.getElementById('btnAgregar').addEventListener('click', () => {
+  agregarItem(`Item ${Date.now()}`);
+});
