@@ -14,3 +14,9 @@ document.getElementById('btnAgregar').addEventListener('click', () => {
     input.value = '';
   }
 });
+// Agregar también con Enter
+document.getElementById('inputTexto').addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    document.getElementById('btnAgregar').click();
+  }
+});
