@@ -1,5 +1,4 @@
 const { suma } = require('../src/app.js');
-
 console.log('Iniciando tests...');
 
 // Test mínimo con Node.js nativo (sin Jest)
