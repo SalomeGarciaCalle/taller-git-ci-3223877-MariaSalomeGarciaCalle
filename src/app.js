@@ -6,7 +6,11 @@ function agregarItem(texto) {
   lista.appendChild(li);
 }
 
-// Conectar botón
 document.getElementById('btnAgregar').addEventListener('click', () => {
-  agregarItem(`Item ${Date.now()}`);
+  const input = document.getElementById('inputTexto');
+  const texto = input.value.trim();
+  if (texto) {
+    agregarItem(texto);
+    input.value = '';
+  }
 });
