@@ -24,3 +24,12 @@ if (typeof window !== 'undefined') {
     }
   });
 }
+// Función de suma
+function suma(a, b) {
+  return a + b;
+}
+
+// ✅ Exportar para los tests
+if (typeof module !== 'undefined') {
+  module.exports = { suma };
+}
