@@ -25,5 +25,5 @@ jobs:
       - name: Check formatting (Prettier)
         run: npx prettier --check .
 
-      - name: Run tests
-        run: node --test tests/suma.test.js
+         - name: Run tests
+        run: node tests/suma.test.js
